@@ -3123,7 +3123,7 @@
 				width: 16em;
 			}
 
-		.spotlight .image.leftimage {
+		.spotlight.leftimage .image {
 			display: inline-block;
 			margin-left: 0em;
 			margin-right: 4em;
@@ -3131,8 +3131,8 @@
 			border-radius: 100%;
 			border: solid 1px;
 		}
-
-			.spotlight .image.leftimage img {
+/*DELETE?*/
+			.spotlight.leftimage .image img {
 				display: block;
 				border-radius: 100%;
 				width: 16em;
@@ -3170,13 +3170,20 @@
 					margin-bottom: 2em;
 				}
 
-				.spotlight .image.leftimage {
-					-moz-flex: 0 1 auto;
-					-webkit-flex: 0 1 auto;
-					-ms-flex: 0 1 auto;
-					flex: 0 1 auto;
-					margin-right: 0;
-					margin-bottom: 2em;
+			.spotlight.leftimage {
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+			}
+
+				.spotlight.leftimage .image {
+				  -moz-flex: 0 1 auto;
+				  -webkit-flex: 0 1 auto;
+				  -ms-flex: 0 1 auto;
+				  flex: 0 1 auto;
+				  margin-right: 0;
+				  margin-bottom: 2em;
 				}
 
 		}
@@ -3191,13 +3198,13 @@
 					width: 12em;
 				}
 
-			.spotlight .image.leftimage {
-				padding: 0.35em;
+			.spotlight.leftimage .image {
+			  padding: 0.35em;
 			}
 
-				.spotlight .image.leftimage img {
-					width: 12em;
-				}
+			  .spotlight.leftimage .image img {
+			    width: 12em;
+			  }
 
 		}
 
