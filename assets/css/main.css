@@ -3098,6 +3098,7 @@
 			-webkit-flex: 1;
 			-ms-flex: 1;
 			flex: 1;
+			text-align: right;
 		}
 
 			.spotlight .content > :last-child {
@@ -3106,6 +3107,10 @@
 
 			.spotlight .content header.major {
 				margin: 0 0 2em 0;
+			}
+
+			.spotlight .content header.major h2:after {
+				margin-left: auto;
 			}
 
 		.spotlight .image {
@@ -3123,6 +3128,15 @@
 				width: 16em;
 			}
 
+		.spotlight.leftimage .content {
+			text-align: left;
+		}
+
+			.spotlight.leftimage .content header.major h2:after {
+				margin-left: 0;
+				margin-right: auto;
+			}
+
 		.spotlight.leftimage .image {
 			display: inline-block;
 			margin-left: 0em;
@@ -3131,7 +3145,7 @@
 			border-radius: 100%;
 			border: solid 1px;
 		}
-/*DELETE?*/
+
 			.spotlight.leftimage .image img {
 				display: block;
 				border-radius: 100%;
@@ -3154,6 +3168,7 @@
 					-ms-flex: 0 1 auto;
 					flex: 0 1 auto;
 					width: 100%;
+					text-align: center;
 				}
 
 					.spotlight .content header.major h2:after {
@@ -3168,6 +3183,15 @@
 					flex: 0 1 auto;
 					margin-left: 0;
 					margin-bottom: 2em;
+				}
+
+			.spotlight.leftimage .content {
+				text-align: center;
+			}
+
+				.spotlight.leftimage .content header.major h2:after {
+					margin-left: auto;
+					margin-right: auto;
 				}
 
 			.spotlight.leftimage {
